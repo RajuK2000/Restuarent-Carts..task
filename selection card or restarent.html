@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select card or Resturant</title>
+    <style>
+        body{
+            background-image: url(OIP\ \(1\).jpg);
+            background-size: contain;
+            text-align: center;
+            font-size: 50px;
+            color:lightslategray; 
+           
+        }
+        #a1{
+            margin: 100px;
+            margin-left:250px ;
+            display:flex;
+            color: blue;
+           gap: 100px;
+           text-align: center;
+        }
+        #b1,#b12{
+           height: 400px;
+           width: 450px;
+           border-radius: 30px;
+    
+        }
+        #b1:hover{
+            transform: scale(1.05);
+        }
+        #b12:hover{
+            transform: scale(1.05);
+        }
+        #d1,#d12{
+            width:100% ;
+            height:300px;
+            border-radius: 30px;
+        }
+        #f1,#f12{
+            height: 40px;
+            width: 300px;
+            border-radius: 30px;
+            margin-top: 20px;
+        background-color: black;
+
+        }
+        #f1:hover{
+            transform: scale(1.1);
+        }
+        #f12:hover{
+            transform: scale(1.1);
+        }
+        #g1,#g12{
+            text-decoration: none;
+            font-size: 20px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var z=document.createElement("div");
+        z.innerText="Choose One"
+        var a=document.createElement("div");
+        a.setAttribute("id","a1");
+        var b=document.createElement("div");
+        b.setAttribute("id","b1");
+        var d=document.createElement("img");
+        d.setAttribute("src","./rs11.jpg");
+        d.setAttribute("id","d1");
+        var f=document.createElement("button");
+        f.setAttribute("id","f1")
+        var g=document.createElement("a");
+        g.innerText="Resturant Page";
+        g.setAttribute("href","./Restarent-task Using JS.html")
+        g.setAttribute("id","g1");
+
+        f.appendChild(g);
+       
+        
+        var c=document.createElement("div"); 
+        c.setAttribute("id","b12");
+        var d11=document.createElement("img");
+        d11.setAttribute("src","./th (1).jpg");
+        d11.setAttribute("id","d12");
+        var f11=document.createElement("button");
+        f11.setAttribute("id","f12")
+        var g11=document.createElement("a");
+        g11.innerText="Shopping Page";
+        g11.setAttribute("href","./Fake strore cards..html")
+        g11.setAttribute("id","g12");
+
+        f11.appendChild(g11);
+        
+        z.appendChild(a);
+        z.appendChild(c);
+         document.body.appendChild(z)
+        // document.body.appendChild(a);
+        b.appendChild(d);
+        b.appendChild(f);
+        c.appendChild(d11);
+        c.appendChild(f11);
+        a.appendChild(b);
+        a.appendChild(c);
+        
+    </script>
+</body>
+</html>

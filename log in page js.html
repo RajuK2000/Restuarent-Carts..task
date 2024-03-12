@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        #mai{
+            height: 720px;
+            background-image: url(log.jpg);
+            background-size: contain;
+        }
+        #di{
+          color: aliceblue;
+            text-align: center;
+            font-size: 50px;
+            position: relative;
+            top: 100px;
+        }
+      #id{
+        display: block;
+        padding: 20px;
+        font-size: 30px;
+        color:bisque;
+      }
+      #fo{
+        text-align: center;
+        margin-top: 150px;
+      }
+      #an{
+        text-decoration: none;
+        font-size: 20px;
+      }
+      #bt{
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        margin-top: 10px;
+      }
+      #bt:hover{
+         transform: scale(1.05);
+         background-color: darkkhaki;
+      }
+      #in1{
+        background-color:darkgray;
+        height: 30px;
+        width: 250px;
+        border-radius: 30px;
+        color: beige;
+        font-size: 20px;
+      }
+      #in1:hover{
+            background-color: blueviolet;
+            transform: scale(1.04)
+      }
+      #su{
+        height: 550px;
+        width: 500px;
+        position: relative;
+        top: 80px;
+        left: 500px;
+        background-image: url(log2.jpg);
+        background-size: contain;
+        border-radius: 30px;
+      
+      }
+        
+    </style>
+</head>
+<body>
+    <script>
+      
+      var main=document.createElement("div");
+      document.body.appendChild(main);
+      main.setAttribute("id","mai");
+
+      var sub=document.createElement("div");
+      main.appendChild(sub);
+      sub.setAttribute("id","su");
+
+        var d=document.createElement("div");
+        d.innerText="Log In";
+        sub.appendChild(d);
+        d.setAttribute("id","di");
+
+
+        var form=document.createElement("form");
+        sub.appendChild(form);
+        form.setAttribute("id","fo");
+
+        var lab=document.createElement("label")
+        form.appendChild(lab);
+        lab.innerText="User name:"
+        lab.setAttribute("id","id");
+
+        var input=document.createElement("input")
+        input.setAttribute("type","text")
+        lab.appendChild(input);
+        input.setAttribute("id","in1")
+
+
+
+        var lab=document.createElement("label")
+        form.appendChild(lab);
+        lab.innerText="Password: "
+        lab.setAttribute("id","id");
+
+        var input=document.createElement("input")
+        input.setAttribute("type","password")
+        lab.appendChild(input);
+        input.setAttribute("id","in1")
+
+        var lab=document.createElement("label")
+        form.appendChild(lab);
+        
+
+        var btn=document.createElement("button")
+        var a=document.createElement("a");
+        btn.appendChild(a);
+        btn.setAttribute("id","bt")
+        a.innerText="Log in";
+        a.setAttribute("id","an")
+        a.setAttribute("href","./selection card or restarent.html")
+        lab.appendChild(btn);
+        
+
+    </script>
+</body>
+</html>
